@@ -4,7 +4,7 @@
 #include "pch.h"
 #include "framework.h"
 #include "Client.h"
-#include "cstdio"
+#include "tchar.h"
 #include "afxsock.h" //Thêm cái này vào, nó là thư viện socket
 
 
