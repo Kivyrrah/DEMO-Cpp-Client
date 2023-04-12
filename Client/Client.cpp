@@ -57,6 +57,7 @@ int main()
             //Bắt đầu gửi tin nhắn
             while (true)
             {
+                cout << "Da ket noi voi Server thanh cong: " << endl;
                 cout << "Hay nhap tin nhan cho Server: ";
                 gets_s(message);
                 len = strlen(message);
