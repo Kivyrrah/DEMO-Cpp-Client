@@ -48,16 +48,15 @@ int main()
             //Khởi tạo Socket
             client.Create();
             //Kết nối tới Server port 3153
-            client.Connect(_T("127.0.0.1"), 3153); //127.0.0.1 là một loopback; _T dùng để chuyển qua CString
+            client.Connect(_T("127.0.0.1"), 8888); //127.0.0.1 là một loopback; _T dùng để chuyển qua CString
 
             //Khai báo tin nhắn
             char message[100];
-            int len = 0; //Độ dài tin nhắn
+            int len = '\0'; //Độ dài tin nhắn
 
             //Bắt đầu gửi tin nhắn
             while (true)
             {
-                cout << "Da ket noi voi Server thanh cong: " << endl;
                 cout << "Hay nhap tin nhan cho Server: ";
                 gets_s(message);
                 len = strlen(message);
